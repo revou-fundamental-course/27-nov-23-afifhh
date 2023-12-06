@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<title>Kalkulator Matematik Segitiga</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+    <script src="js/kalkulatorSegitiga.js"></script>s
+    <div class="container-fluid" align="center"> 
+        <h3>WELCOME TO KATIK </h3>
+        <p>sebuah website static untuk menghitung nilai luas dan keliling bangun datar</p>
+    </div>
+    <div class="vertical-menu">
+        <a href="#luas">Luas</a>
+        <a href="#keliling">keliling</a>
+    </div>
+    <div class="container-fluid" id="luas">
+        <div class="img-content">
+            <img src="segitiga.png" alt="segitiga" class="center">
+            <p>L = 1/2 * a * t</p>
+            <a>Dimana :</a><br>
+            <a>L = luas</a><br>
+            <a>a = alas</a><br>
+            <a>t = tinggi</a><br>
+            <br>
+        </div>
+        <form name="form1">
+            <label for="fname">Alas</label><br>
+            <input type="number" name="angka1" id="nilai1" placeholder="masukkan angka" required ><br>
+            <label for="lname">Tinggi</label><br>
+            <input type="number" name="angka2" id="nilai2" placeholder="masukkan angka" required ><br><br>
+            <input type=button name=submit onclick="luas()" value="Luas">
+            <p id="hitungLuas1"> </p>
+            <p id="hitungLuas2"> </p>
+            <p id="hitungLuas3"> </p>
+            
+          </form> 
+          <input type="submit" onclick="reset()" value="Reset">
+          
+    </div>
+    <div class="container-fluid" id="keliling">
+        <div class="img-content">
+            <img src="segitiga.png" alt="segitiga" class="center">
+            <p>K = s * s * s</p>
+            <a>Dimana :</a><br>
+            <a>K = Keliling</a><br>
+            <a>s = Sisi</a><br>
+            <br>
+        </div>
+        <form name="form2">
+            <label for="fname">sisi pertama</label><br>
+            <input type="number" name="angka1" id="sisi1" placeholder="masukkan angka" required ><br>
+            <label for="lname">Sisi Kedua</label><br>
+            <input type="number" name="angka2" id="sisi2" placeholder="masukkan angka" required ><br><br>
+            <label for="lname">Sisi Ketiga</label><br>
+            <input type="number" name="angka3" id="sisi3" placeholder="masukkan angka" required ><br><br>
+            <input type=button name=submit onclick="keliling()" value="Keliling">
+            <p id="hitungKeliling1"> </p>
+            <p id="hitungKeliling2"> </p>
+            <p id="hitungKeliling3"> </p>
+            
+          </form> 
+          <input type="submit" onclick="reset()" value="Reset">
+          
+    </div>
+</body>
+</html>
